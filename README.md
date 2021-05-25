@@ -24,12 +24,12 @@ Acquiring API Docs: https://oplata.tinkoff.ru/develop/api/payments/
 ## Installation
 Use **go mod** as usual or install the package with **dep**:
 ```bash
-dep ensure -add github.com/nikita-vanyasin/tinkoff
+dep ensure -add github.com/bamp94/tinkoff
 ```
 
 ## Usage
 
-Automatically generated documentation can be found [here](https://pkg.go.dev/github.com/nikita-vanyasin/tinkoff).
+Automatically generated documentation can be found [here](https://pkg.go.dev/github.com/bamp94/tinkoff).
 
 Some examples of usage can be found in `*_test.go` files.
 
