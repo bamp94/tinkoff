@@ -19,7 +19,7 @@ type InitRequest struct {
 	Language        string            `json:"Language,omitempty"`        // Язык платежной формы: ru или en
 	Recurrent       string            `json:"Recurrent,omitempty"`       // Y для регистрации автоплатежа. Можно использовать SetIsRecurrent(true)
 	CustomerKey     string            `json:"CustomerKey,omitempty"`     // Идентификатор покупателя в системе продавца. Передается вместе с параметром CardId. См. метод GetCardList
-	Data            map[string]string `json:"DATA"`                      // Дополнительные параметры платежа
+	Data            map[string]string `json:"DATA,omitempty"`            // Дополнительные параметры платежа
 	Receipt         *Receipt          `json:"Receipt,omitempty"`         // Чек
 	RedirectDueDate Time              `json:"RedirectDueDate,omitempty"` // Срок жизни ссылки
 	NotificationURL string            `json:"NotificationURL,omitempty"` // Адрес для получения http нотификаций
